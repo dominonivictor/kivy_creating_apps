@@ -1,0 +1,25 @@
+
+SearchScreen:
+
+<SearchScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            height: "40dp"
+            size_hint_y: 0.3
+            TextInput:
+                size_hint_x: 0.7
+                top: root.height
+                left: 0
+                text: 'Put your search here!'
+
+            Button:
+                size_hint_x: 0.3
+                top: root.height
+                right: root.width
+                text: 'Search!'
+        Label:
+            top: (root.height//10)*7
+            size_hint_y: 0.7
+            text: 'Search results here!'
+        
